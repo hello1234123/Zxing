@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <EditText android:id="@+id/edit_text_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="10pt"
+        android:text="请输入文档标题"/>
+    <EditText android:id="@+id/edit_text_content"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/edit_text_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:text="请输入文档内容"/>
+    <Button android:id="@+id/btn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="生成"/>
+    <ImageView android:id="@+id/img_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/btn_text"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
